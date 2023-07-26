@@ -1,4 +1,4 @@
-package com.mingchencodelab.polymart;
+package com.mingchencodelab.polymart.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.mingchencodelab.polymart.R;
+import com.mingchencodelab.polymart.lab1.LoadImageAsyncTask;
+import com.mingchencodelab.polymart.lab1.LoadImageInterface;
 
 public class MainActivity extends AppCompatActivity implements LoadImageInterface, View.OnClickListener {
     private TextView textView;

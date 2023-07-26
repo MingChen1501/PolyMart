@@ -11,6 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.mingchencodelab.polymart.lab4.Insert;
+import com.mingchencodelab.polymart.lab4.Product;
+import com.mingchencodelab.polymart.lab4.ResponseInsert;
+import com.mingchencodelab.polymart.lab4.ResponseSelect;
+import com.mingchencodelab.polymart.lab4.Select;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 

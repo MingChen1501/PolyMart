@@ -1,4 +1,4 @@
-package com.mingchencodelab.polymart;
+package com.mingchencodelab.polymart.lab1;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.mingchencodelab.polymart.R;
 
 import java.io.IOException;
 import java.io.InputStream;

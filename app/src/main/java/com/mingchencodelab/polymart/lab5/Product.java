@@ -1,6 +1,9 @@
-package com.mingchencodelab.polymart;
+package com.mingchencodelab.polymart.lab5;
+
+import androidx.annotation.NonNull;
 
 public class Product {
+    private String pid;
     private String name;
     private String price;
     private String description;
@@ -8,10 +11,19 @@ public class Product {
     public Product() {
     }
 
-    public Product(String name, String price, String description) {
+    public Product(String product_id, String name, String price, String description) {
+        this.pid = product_id;
         this.name = name;
         this.price = price;
         this.description = description;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 
     public String getName() {
@@ -26,15 +38,6 @@ public class Product {
         return price;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price='" + price + '\'' +
-                ", description='" + description + '\'' +
-                "}\n";
-    }
-
     public void setPrice(String price) {
         this.price = price;
     }
@@ -45,5 +48,16 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id='" + pid + '\'' +
+                ", name='" + name + '\'' +
+                ", price='" + price + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

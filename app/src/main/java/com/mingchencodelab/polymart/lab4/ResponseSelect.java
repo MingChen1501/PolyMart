@@ -1,4 +1,4 @@
-package com.mingchencodelab.polymart;
+package com.mingchencodelab.polymart.lab4;
 
 public class ResponseSelect {
     private Product[] products;

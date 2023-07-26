@@ -1,4 +1,4 @@
-package com.mingchencodelab.polymart;
+package com.mingchencodelab.polymart.lab4;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
