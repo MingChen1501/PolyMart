@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class MainActivity6 extends AppCompatActivity {
     RequestQueue requestQueue;
     String host = "http://localhost:3000";
-    String url = host + "posts";
+    String url = host + "/posts";
     Button btnGet;
     Button btnGet2;
     TextView txtResult;
