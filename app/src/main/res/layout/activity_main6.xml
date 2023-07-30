@@ -10,33 +10,50 @@
         android:id="@+id/lab6_btn_get"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="26dp"
-        android:text="GET"
-        app:layout_constraintEnd_toStartOf="@+id/lab6_txt_res"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="37dp"
+        android:text="Get Bài viết"
+        app:layout_constraintBottom_toTopOf="@+id/lab6_btn_get_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lab6_et_id"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lab6_txt_res"
-        android:layout_width="247dp"
-        android:layout_height="675dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="30dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lab6_btn_get_array"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lab6_btn_get_array" />
 
     <Button
         android:id="@+id/lab6_btn_get_array"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="20dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/lab6_txt_res"
+        android:layout_marginBottom="7dp"
+        android:text="Danh sách bài viết"
+        app:layout_constraintBottom_toTopOf="@+id/lab6_txt_res"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lab6_btn_get" />
+
+    <EditText
+        android:id="@+id/lab6_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:hint="id post"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/lab6_btn_get_array"
+        app:layout_constraintEnd_toStartOf="@+id/lab6_btn_get"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
