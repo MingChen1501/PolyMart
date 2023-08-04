@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="2dp">
+
+    <Button
+        android:id="@+id/lab7btnselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lab7btninsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        app:layout_constraintStart_toEndOf="@+id/lab7btnselect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lab7btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        app:layout_constraintStart_toEndOf="@+id/lab7btninsert"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lab7btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        app:layout_constraintStart_toEndOf="@+id/lab7btnupdate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lab7edtId"
+        android:layout_width="379dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lab7btninsert" />
+
+    <EditText
+        android:id="@+id/lab7edtTitle"
+        android:layout_width="390dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="title"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/lab7edtId"
+        tools:layout_editor_absoluteX="12dp" />
+
+    <EditText
+        android:id="@+id/lab7edtContent"
+        android:layout_width="392dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/lab7edtTitle"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp" />
+
+    <TextView
+        android:id="@+id/lab7txtResult"
+        android:layout_width="385dp"
+        android:layout_height="541dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lab7edtContent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
